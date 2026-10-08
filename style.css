@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+.hero {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 60px, 20px;
+    border-radius: 0 0 25px 25px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 8px;
+}
+
+section {
+    padding: 35px 25px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+section > p {
+    margin-bottom: 20px
+}
+
+.preparation ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    gap: 12px;
+}
+
+.preparation li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e6ed;
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e0e6ed;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.destination-card p {
+    font-size: 14px;
+    margin: 0 15px 20px;
+    color: #526779;
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rule-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e0e6ed;
+}
+
+.rule-card h3 {
+    margin-bottom: 15px;
+}
+
+.rule-card li {
+    margin-bottom: 10px;
+}
+
+.budget-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.budget-card {
+    background-color: #173b57;
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.budget-card h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.budget-card p {
+    margin-bottom: 12px;
+}
+
+.travel-report form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e0e6ed;
+}
+
+.travel-report label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.travel-report, input
+.travel-report textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.travel-report button {
+    background-color: #173b57;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.travel-report button:hover {
+    background-color: #285d80;
+}
+
+footer {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    .destination-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rules-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32;
+    }
+}
+
+@media (max-width: 400px) {
+    .destination-list {
+        grid-template-columns: 1fr;
+    }
+
+    .preparation ul {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+}
